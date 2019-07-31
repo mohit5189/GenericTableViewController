@@ -18,6 +18,8 @@
 		B768527322F04EDD00C91EA4 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768527122F04EDD00C91EA4 /* MyTableViewCell.swift */; };
 		B768527422F04EDD00C91EA4 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B768527222F04EDD00C91EA4 /* MyTableViewCell.xib */; };
 		B768527622F04F1200C91EA4 /* MyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768527522F04F1200C91EA4 /* MyModel.swift */; };
+		B768528222F164B800C91EA4 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B768528022F164B800C91EA4 /* MyTableViewCell2.swift */; };
+		B768528322F164B800C91EA4 /* MyTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B768528122F164B800C91EA4 /* MyTableViewCell2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		B768527122F04EDD00C91EA4 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableViewCell.swift; path = ../MyTableViewCell.swift; sourceTree = "<group>"; };
 		B768527222F04EDD00C91EA4 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		B768527522F04F1200C91EA4 /* MyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyModel.swift; sourceTree = "<group>"; };
+		B768528022F164B800C91EA4 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
+		B768528122F164B800C91EA4 /* MyTableViewCell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 			children = (
 				B768527122F04EDD00C91EA4 /* MyTableViewCell.swift */,
 				B768527222F04EDD00C91EA4 /* MyTableViewCell.xib */,
+				B768528022F164B800C91EA4 /* MyTableViewCell2.swift */,
+				B768528122F164B800C91EA4 /* MyTableViewCell2.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B768528322F164B800C91EA4 /* MyTableViewCell2.xib in Resources */,
 				B768524622F021F800C91EA4 /* LaunchScreen.storyboard in Resources */,
 				B768527422F04EDD00C91EA4 /* MyTableViewCell.xib in Resources */,
 				B768524322F021F800C91EA4 /* Assets.xcassets in Resources */,
@@ -303,6 +310,7 @@
 				B768523E22F021F500C91EA4 /* ViewController.swift in Sources */,
 				B768527622F04F1200C91EA4 /* MyModel.swift in Sources */,
 				B768526B22F0222700C91EA4 /* GenericTableViewController.swift in Sources */,
+				B768528222F164B800C91EA4 /* MyTableViewCell2.swift in Sources */,
 				B768523C22F021F500C91EA4 /* AppDelegate.swift in Sources */,
 				B768527322F04EDD00C91EA4 /* MyTableViewCell.swift in Sources */,
 				B768527022F0228F00C91EA4 /* GenericProtocols.swift in Sources */,

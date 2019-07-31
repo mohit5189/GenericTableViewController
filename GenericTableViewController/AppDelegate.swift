@@ -19,9 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeVC = GenericTableViewController<MyModel, MyTableViewCell>(data: getDataToDisplayForFirstpage())
         window?.rootViewController = UINavigationController(rootViewController: homeVC)
         window?.makeKeyAndVisible()
+        homeVC.didSelect = { [weak self] model in
+            guard let weakSelf = self else { return }
+            let detailVC = GenericTableViewController<MyModel, MyTableViewCell2>(data: weakSelf.getDataToDisplayForFirstpage())
+            (weakSelf.window?.rootViewController as! UINavigationController).pushViewController(detailVC, animated: true)
+        }
         return true
     }
-
+    
     func getDataToDisplayForFirstpage() -> [MyModel] {
         return [MyModel(imageName: "icon", title: "Sample Title 1", subTitle: "SubTitle1"),
                 MyModel(imageName: "icon", title: "Sample Title 2", subTitle: "SubTitle2"),

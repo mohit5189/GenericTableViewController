@@ -11,12 +11,14 @@ import UIKit
 class GenericTableViewController<T, Cell: UITableViewCell & GenericCellProtocol >: UITableViewController where Cell.T == T {
 
     var data: [T]!
-    
+    var didSelect: (T) -> () = { _ in }
+
     init(data: [T]) {
         self.data = data
         super.init(style: .plain)
         tableView.register(UINib(nibName: String(describing: Cell.self), bundle: nil), forCellReuseIdentifier: "cell")
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,5 +40,9 @@ class GenericTableViewController<T, Cell: UITableViewCell & GenericCellProtocol 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! Cell
         cell.configureCell(model: data[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelect(data[indexPath.row])
     }
 }
